@@ -1,0 +1,811 @@
+// Vars
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$cream: #F7F6EE
+$green: #203D32
+$mint:  #A5D1C5
+
+$headings: saffran, sans-serif
+$body: 'Didact Gothic', sans-serif
+
+
+// Content
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+*
+	box-sizing: border-box
+
+html, body, #page, #content, #main
+	min-height: 100%
+	min-height: 100vh
+	// background: $cream
+	color: $green
+	font-family: $body
+
+
+.parallax-window
+    min-height: 400px
+    background: transparent
+
+.no-scroll
+	overflow: hidden
+
+.count
+	align-self: flex-start
+	display: none
+
+	@media (min-width: 768px)
+		display: block
+
+	h2
+		background: #a5d3c5
+		text-align: center
+		color: white
+		border-radius: 50%
+		margin: 0 auto 10px auto
+		font-family: saffran, sans-serif
+
+		line-height: 46px
+		width: 46px
+		font-size: 2rem
+
+		@media (min-width: 768px)
+			line-height: 66px
+			width: 66px
+			font-size: 3rem
+
+	p
+		margin: 0
+		text-transform: uppercase
+		color: white
+		font-size: 1.6rem
+		text-align: center
+		line-height: 1
+
+		@media (min-width: 768px)
+			font-size: 2.2rem
+
+
+#fp-nav ul, .fp-slidesNav ul
+	text-align: center
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span
+	background-color: white
+
+.slick-dots, .fp-slidesNav.fp-bottom
+	bottom: 5rem
+
+	@media (min-width: 1367px)
+		bottom: 10rem
+
+	li
+		height: 30px
+		width: 30px
+
+		button
+			padding: 0
+			margin: 0
+			width: 30px
+			height: 30px
+
+			&:before
+				color: white
+				opacity: 1
+				font-size: 12px
+
+		&.slick-active button:before
+			color: white
+			opacity: 1
+			font-size: 15px
+
+section
+	min-height: 100%
+	min-height: 100vh
+	height: auto
+	display: flex
+	flex: 0 0 100%
+	flex: 0 0 100vw
+	flex-flow: wrap row
+	align-items: center
+	background: $cream
+	padding: 8rem 0
+	display: flex
+	flex-flow: wrap row
+	align-content: center
+
+
+.parallax-window
+	min-height: 100%
+	min-height: 100vh
+	background: transparent
+
+
+#banner
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	height: 100vh
+	padding: 0 !important
+	display: flex
+	flex-flow: wrap row
+	align-content: center
+
+
+	.top
+		display: flex
+		padding: 3rem 0
+		position: absolute
+		width: 100%
+		top: 0
+		z-index: 10
+
+		@media (min-width: 768px)
+			padding: 6rem 0
+
+		.row
+			justify-content: space-between
+
+			.col
+				flex: 0 0 33.333%
+				display: flex
+				width: 33.333%
+				justify-content: center
+
+				&:first-child
+					justify-content: flex-start
+
+				&:last-child
+					justify-content: flex-end
+
+			.big-logo
+				max-width: 250px
+				width: 100%
+				display: block
+				align-self: flex-start
+
+				@media (min-width: 768px)
+					max-width: 320px
+
+
+			.social
+				display: inline-flex
+				align-self: flex-start
+
+				a
+					color: white
+					margin-left: 2rem
+					font-size: 2.2rem
+
+
+	.oneslides
+		width: 100vw
+		height: 100vh
+		position: relative
+
+	.slide
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		align-self: center
+		height: 100vh
+		display: flex
+		flex-flow: wrap row
+		align-content: center
+
+
+	.caption
+		display: flex
+		flex: 0 0 100%
+		align-self: center
+		height: 100%
+
+		.row, .container
+			margin: 0
+			max-width: 100%
+
+		h1, h2
+			display: flex
+			flex: 0 0 100%
+			justify-content: center
+			text-align: center
+			color: white
+			margin: 0
+
+		h1
+			font-family: $headings
+			font-size: 4rem
+			text-transform: uppercase
+
+			@media (min-width: 600px)
+				font-size: 6rem
+
+			@media (min-width: 768px)
+				font-size: 8rem
+
+		h2
+			font-family: $body
+			font-size: 2.4rem
+			text-transform: uppercase
+			font-weight: 300
+
+			@media (min-width: 600px)
+				font-size: 2.6rem
+
+
+
+#sectionone
+	background-position: center bottom
+	background-repeat: no-repeat
+	background-size: cover
+
+
+	.text
+		margin-bottom: 4rem
+
+		@media (min-width: 1024px)
+			text-align: right
+			padding-right: 4rem
+			margin-bottom: 0
+
+		hr
+			width: 85px
+			height: 5px
+			border: 0
+			margin: 2rem 0
+			background: $green
+			display: inline-flex
+
+		h2
+			font-size: 3rem
+			// text-transform: uppercase
+			margin: 0
+			font-family: $headings
+
+
+	.points
+
+		@media (min-width: 1024px)
+			padding-left: 4rem
+
+		.point
+			display: flex
+			margin-bottom: 2rem
+			align-items: center
+
+			img
+				width: 78px
+				margin-right: 4rem
+
+			p
+				margin-bottom: 0
+
+
+		.book
+
+			.button
+				display: flex
+				justify-content: center
+				margin-top: 8rem
+				padding: 15px 70px
+				border: 2px solid black
+				background: transparent
+				color: black
+				font-family: saffran, sans-serif
+				text-transform: uppercase
+				margin-bottom: 2rem
+				font-size: 3rem
+				outline: 0
+				text-decoration: none
+				transition: all 0.3s linear
+
+				@media (min-width: 768px)
+					margin-left: 0
+
+				&:hover
+					background: $green
+					color: white
+					border-color: $green
+
+
+#sectiontwo
+	height: 60vh
+	min-height: 60vh
+	background-position: center bottom
+	background-repeat: no-repeat
+	background-size: cover
+
+	.row
+
+		h2, p
+			display: flex
+			flex: 0 0 100%
+			justify-content: center
+			text-align: center
+			color: white
+			margin: 0
+
+		h2
+			font-family: $headings
+			font-size: 4rem
+			// text-transform: uppercase
+
+			@media (min-width: 768px)
+				font-size: 6rem
+
+		p
+			font-family: $body
+			font-size: 2.3rem
+			text-transform: uppercase
+			font-weight: 300
+
+			@media (min-width: 768px)
+				font-size: 2.6rem
+
+
+		.count
+			align-self: center
+			position: relative
+			width: 100%
+			justify-content: center
+			text-align: center
+			margin-bottom: 20px
+			display: block
+
+			h2
+				margin-bottom: 10px
+				display: inline-block
+
+				background: #a5d3c5
+				text-align: center
+				color: white
+				border-radius: 50%
+				margin: 0 auto 10px auto
+				font-family: saffran, sans-serif
+
+				line-height: 46px
+				width: 46px
+				font-size: 2rem
+
+				@media (min-width: 768px)
+					line-height: 66px
+					width: 66px
+					font-size: 3rem
+
+
+
+#sectionthree
+	background-position: center bottom
+	background-repeat: no-repeat
+	background-size: cover
+
+	.space
+		height: 6rem
+
+
+	.row
+		margin-bottom: 8rem
+
+		&:last-child
+			margin-bottom: 0
+
+		.column
+
+			h1, h2, h3
+				font-size: 3rem
+				// text-transform: uppercase
+				margin: 0
+				margin-bottom: 0
+				font-family: $headings
+
+			hr
+				width: 85px
+				height: 5px
+				border: 0
+				margin: 2rem 0
+				background: #203D32
+				display: inline-flex
+
+		.bio
+			margin-bottom: 8rem
+
+			@media (min-width: 1024px)
+				margin-bottom: 0
+
+			h1, h2, h3
+				font-size: 2.5rem
+				text-transform: uppercase
+				margin: 0
+				border-bottom: 5px solid white
+				margin-bottom: 10px
+				padding-bottom: 10px
+				font-family: $headings
+
+				@media (min-width: 1025px)
+					font-size: 3rem
+
+			ul
+				list-style: none
+				margin: 0
+				border-top: 1px solid white
+				margin-top: 20px
+				padding-top: 20px
+
+				li
+					margin-bottom: 0
+					margin-left: 20px
+
+					&:before
+						content: "- "
+						position: absolute
+						margin-left: -20px
+						color: white
+
+#sectionfour, #sectionfive, #sectionseven
+	height: auto
+	min-height: auto
+	padding: 0
+
+	.rowalt
+		margin: 0
+		display: block
+		width: 100%
+
+	.carousel
+
+		.slick-prev
+			left: 20px
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQwLjgyMyAyNDAuODIzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNDAuODIzIDI0MC44MjM7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8cGF0aCBpZD0iQ2hldnJvbl9SaWdodCIgZD0iTTU3LjYzMywxMjkuMDA3TDE2NS45MywyMzcuMjY4YzQuNzUyLDQuNzQsMTIuNDUxLDQuNzQsMTcuMjE1LDBjNC43NTItNC43NCw0Ljc1Mi0xMi40MzksMC0xNy4xNzkgICBsLTk5LjcwNy05OS42NzFsOTkuNjk1LTk5LjY3MWM0Ljc1Mi00Ljc0LDQuNzUyLTEyLjQzOSwwLTE3LjE5MWMtNC43NTItNC43NC0xMi40NjMtNC43NC0xNy4yMTUsMEw1Ny42MjEsMTExLjgxNiAgIEM1Mi45NDIsMTE2LjUwNyw1Mi45NDIsMTI0LjMyNyw1Ny42MzMsMTI5LjAwN3oiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiNmZmZmZmYiPjwvcGF0aD4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+)
+			background-size: cover
+			height: 50px
+			width: 50px
+			z-index: 1
+			display: none !important
+
+			@media (min-width: 768px)
+				display: block !important
+
+			&:before
+				display: none
+
+
+		.slick-next
+			right: 20px
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQwLjgyMyAyNDAuODIzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNDAuODIzIDI0MC44MjM7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8cGF0aCBpZD0iQ2hldnJvbl9SaWdodF8xXyIgZD0iTTE4My4xODksMTExLjgxNkw3NC44OTIsMy41NTVjLTQuNzUyLTQuNzQtMTIuNDUxLTQuNzQtMTcuMjE1LDBjLTQuNzUyLDQuNzQtNC43NTIsMTIuNDM5LDAsMTcuMTc5ICAgbDk5LjcwNyw5OS42NzFsLTk5LjY5NSw5OS42NzFjLTQuNzUyLDQuNzQtNC43NTIsMTIuNDM5LDAsMTcuMTkxYzQuNzUyLDQuNzQsMTIuNDYzLDQuNzQsMTcuMjE1LDBsMTA4LjI5Ny0xMDguMjYxICAgQzE4Ny44ODEsMTI0LjMxNSwxODcuODgxLDExNi40OTUsMTgzLjE4OSwxMTEuODE2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iI2ZmZmZmZiI+PC9wYXRoPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=)
+			background-size: cover
+			height: 50px
+			width: 50px
+			z-index: 1
+			display: none !important
+
+			@media (min-width: 768px)
+				display: block !important
+
+			&:before
+				display: none
+
+
+		.slick-slide
+
+			img
+				display: block
+				width: 100%
+				height: auto
+
+
+#sectionfour
+	padding: 0 !important
+
+	.rowalt
+		margin: 0
+		display: block
+		width: 100%
+
+	.carousel
+
+		.slick-prev
+			left: 20px
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQwLjgyMyAyNDAuODIzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNDAuODIzIDI0MC44MjM7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8cGF0aCBpZD0iQ2hldnJvbl9SaWdodCIgZD0iTTU3LjYzMywxMjkuMDA3TDE2NS45MywyMzcuMjY4YzQuNzUyLDQuNzQsMTIuNDUxLDQuNzQsMTcuMjE1LDBjNC43NTItNC43NCw0Ljc1Mi0xMi40MzksMC0xNy4xNzkgICBsLTk5LjcwNy05OS42NzFsOTkuNjk1LTk5LjY3MWM0Ljc1Mi00Ljc0LDQuNzUyLTEyLjQzOSwwLTE3LjE5MWMtNC43NTItNC43NC0xMi40NjMtNC43NC0xNy4yMTUsMEw1Ny42MjEsMTExLjgxNiAgIEM1Mi45NDIsMTE2LjUwNyw1Mi45NDIsMTI0LjMyNyw1Ny42MzMsMTI5LjAwN3oiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiNmZmZmZmYiPjwvcGF0aD4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+)
+			background-size: cover
+			height: 50px
+			width: 50px
+			z-index: 1
+
+			&:before
+				display: none
+
+
+		.slick-next
+			right: 20px
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQwLjgyMyAyNDAuODIzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNDAuODIzIDI0MC44MjM7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8cGF0aCBpZD0iQ2hldnJvbl9SaWdodF8xXyIgZD0iTTE4My4xODksMTExLjgxNkw3NC44OTIsMy41NTVjLTQuNzUyLTQuNzQtMTIuNDUxLTQuNzQtMTcuMjE1LDBjLTQuNzUyLDQuNzQtNC43NTIsMTIuNDM5LDAsMTcuMTc5ICAgbDk5LjcwNyw5OS42NzFsLTk5LjY5NSw5OS42NzFjLTQuNzUyLDQuNzQtNC43NTIsMTIuNDM5LDAsMTcuMTkxYzQuNzUyLDQuNzQsMTIuNDYzLDQuNzQsMTcuMjE1LDBsMTA4LjI5Ny0xMDguMjYxICAgQzE4Ny44ODEsMTI0LjMxNSwxODcuODgxLDExNi40OTUsMTgzLjE4OSwxMTEuODE2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iI2ZmZmZmZiI+PC9wYXRoPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=)
+			background-size: cover
+			height: 50px
+			width: 50px
+			z-index: 1
+
+			&:before
+				display: none
+
+
+		.slick-slide
+
+			img
+				display: block
+				width: 100%
+				height: auto
+
+#sectionfive
+	padding: 0 !important
+
+	ul
+
+		li
+			flex: 0 0 50%
+			width: 50%
+
+			@media (min-width: 768px)
+				flex: 0 0 25%
+				width: 25%
+
+
+#ectionseven
+	padding: 0 !important
+
+
+#sectionsix
+	background-position: center bottom
+	background-repeat: no-repeat
+	background-size: cover
+
+
+	.text
+		margin-bottom: 4rem
+
+		@media (min-width: 1024px)
+			text-align: right
+			padding-right: 4rem
+			margin-bottom: 0
+
+		hr
+			width: 85px
+			height: 5px
+			border: 0
+			margin: 2rem 0
+			background: $green
+			display: inline-flex
+
+		h2
+			font-size: 3rem
+			// text-transform: uppercase
+			margin: 0
+			font-family: $headings
+
+
+	.points
+
+		@media (min-width: 1024px)
+			padding-left: 4rem
+
+		.point
+			display: flex
+			margin-bottom: 2rem
+			align-items: center
+
+			img
+				width: 78px
+				margin-right: 4rem
+
+			p
+				margin-bottom: 0
+
+
+
+
+#sectioneight
+	height: auto
+	min-height: auto
+	padding: 0 !important
+
+	.row
+		margin: 0
+
+	img
+		width: 100%
+		height: auto
+		display: block
+		align-self: center
+		cursor: pointer
+
+	.video-overlay
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		display: flex
+		align-content: center
+		align-items: center
+		justify-content: center
+		padding: 60px
+		box-sizing: border-box
+		background: rgba(0,0,0,0.5)
+		display: none
+
+		.closeme
+			position: absolute
+			top: 20px
+			right: 20px
+			width: 40px
+			height: 40px
+
+			svg
+				width: 100%
+				height: auto
+				display: block
+
+		video
+			width: 80% !important
+			height: auto !important
+
+		&.show
+			display: flex
+
+#sectionnine
+
+	.row
+		height: 100%
+		margin: 0
+
+	.oneslides
+		width: 100%
+		height: 100%
+		position: relative
+
+	.slide
+		padding: 12rem 3rem
+		box-sizing: border-box
+		justify-content: center
+		align-self: center
+		height: 100vh
+		display: flex
+		flex-flow: wrap row
+		align-content: center
+
+		@media (min-width: 768px)
+			padding: 12rem 8rem
+
+	h3
+		text-align: center
+		font-size: 2rem
+		margin: 0
+		margin-bottom: 3rem
+		font-family: $body
+		color: white
+
+		@media (min-width: 768px)
+			font-size: 3rem
+
+	p
+		text-align: center
+		color: white
+
+
+#sectionten
+	height: auto
+	min-height: auto
+	background-position: center top
+	background-repeat: no-repeat
+	background-size: cover
+	// padding: 12rem 0
+	text-align: center
+
+	.row
+		height: 100%
+
+
+	.form
+		flex: 0 0 100%
+		width: 100%
+		padding-top: 160px
+
+
+		h2, p
+			color: $green
+
+
+		h2
+			font-family: $headings
+			// text-transform: uppercase
+			margin-bottom: 2rem
+			font-size: 3rem
+
+
+
+		.gform_wrapper
+			margin: 0
+			padding-top: 6rem
+			padding-bottom: 6rem
+
+			.validation_error
+				color: red
+				padding: 15px 0
+				display: inline-block
+
+			.validation_message
+				color: red
+				font-size: 14px
+
+			.gform_fields
+				margin: 0
+				list-style: none
+				justify-content: center
+				display: flex
+				flex-flow: wrap row
+
+				.gfield
+					flex: 0 0 100%
+					width: 100%
+					margin: 0 0 1.5rem 0
+
+					@media (min-width: 768px)
+						flex: 0 0 35%
+						width: 35%
+						margin: 0 1.5rem 3rem
+
+					.ginput_container
+						margin-bottom: 0
+
+					label
+						display: none
+
+					input
+						padding: 18px 24px
+						background: white
+						width: 100%
+						box-sizing: border-box
+						border: 0
+						outline: 0
+
+			.gform_button
+				padding: 15px 90px
+				border: 2px solid black
+				background: transparent
+				color: black
+				font-family: $headings
+				text-transform: uppercase
+				margin-bottom: 2rem
+				font-size: 3rem
+				outline: 0
+				width: 100%
+				transition: all 0.3s linear
+
+				@media (min-width: 768px)
+					width: auto
+
+				&:hover
+					background: $green
+					color: white
+					border-color: $green
+
+
+
+.social-copy
+	display: flex
+	justify-content: center
+	flex: 0 0 100%
+	flex-flow: wrap row
+	align-items: center
+	align-content: center
+	// padding-bottom: 6rem
+
+	div
+		flex: 0 0 100%
+		margin-bottom: 2rem
+		margin-bottom: 0
+
+		a
+			color: white
+
+
+	p
+		color: white
+		margin-bottom: 0

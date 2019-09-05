@@ -1,0 +1,180 @@
+// Header
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+#masthead
+	background: white
+	z-index: 9999
+	position: fixed
+	display: flex
+	flex: 0 0 100%
+	min-width: 100%
+	padding: 2rem 0
+	top: -200px
+	transition: all 0.3s linear
+
+	&.scroll
+		top: 0
+
+	.row
+		justify-content: space-between
+		position: relative
+
+		.site-branding
+			align-self: center
+			display: flex
+			margin-bottom: 2rem
+
+			@media (min-width:767px)
+				margin-bottom: 0
+
+			a
+				img
+					width: 28px
+					height: auto
+					display: block
+
+					@media (min-width:400px)
+						width: 48px
+
+
+
+		.main-navigation
+			align-self: center
+			display: flex
+			flex: 1 1 auto
+			justify-content: space-between
+
+			@media (max-width:767px)
+				flex-flow: column
+
+			.hamburger
+				border: 0
+				background: transparent
+				box-shadow: none
+				border-radius: 0
+				outline: 0
+				padding: 0
+				position: absolute
+				right: 0
+				z-index: 999
+				display: flex
+				align-self: center
+
+				@media (min-width:768px)
+					display: none
+
+
+			.menu-primary-container
+				display: flex
+				align-self: center
+
+				// 	position: fixed
+				// 	top: 0
+				// 	right: -75vw
+				// 	width: 75vw
+				// 	height: 100%
+				// 	justify-content: center
+				// 	align-items: center
+				// 	background: rgba(255,255,255,0.9)
+				// 	transition: all 0.3s linear
+
+				.menu
+					flex-flow: wrap row
+					display: flex
+					list-style: none
+					margin: 0
+					padding: 0
+
+					@media (max-width:768px)
+						justify-content: center
+
+					@media (min-width:768px)
+						display: inline-flex
+						flex-flow: wrap row
+
+					.menu-item, .menu-count
+						display: inline-flex
+						margin: 0 0 0 20px
+						flex: 0 0 auto
+						font-weight: 600
+						font-size: 1.5rem
+
+						@media (min-width:400px)
+							font-size: 1.8rem
+
+						@media (min-width:768px)
+							margin: 0 20px
+							justify-content: flex-start
+
+						a
+							color: $green
+							text-decoration: none
+							text-transform: uppercase
+							margin: 0
+							padding: 0
+							font-size: inherit
+
+						&.spaces
+							color: #a5d3c5
+
+							span
+								margin-right: 5px
+
+					.menu-item
+						display: none
+
+						@media (min-width:640px)
+							display: inline-flex
+
+
+			&.toggled
+				.menu-primary-container
+					right: 0
+
+			.social
+				align-self: center
+				display: none
+
+				@media (min-width: 768px)
+					display: flex
+
+				ul
+					list-style: none
+					margin: 0
+					padding: 0
+
+					li
+						margin: 0 0 0 10px
+						display: inline-flex
+
+						a
+							color: $green
+
+
+
+// .fp-viewing-Home,
+.fp-viewing-Program,
+.fp-viewing-Program-0,
+.fp-viewing-BookNow,
+.fp-viewing-BookNow-0,
+.fp-viewing-Coaches,
+.fp-viewing-Coaches-0,
+.fp-viewing-Gallery,
+.fp-viewing-Gallery-0,
+.fp-viewing-Supporters,
+.fp-viewing-Supporters-0,
+.fp-viewing-Facilities,
+.fp-viewing-Facilities-0,
+.fp-viewing-More,
+.fp-viewing-More-0,
+.fp-viewing-Showreel,
+.fp-viewing-Showreel-0,
+.fp-viewing-Testimonals,
+.fp-viewing-Testimonals-0,
+.fp-viewing-Contact,
+.fp-viewing-Contact-0,
+
+	#masthead
+
+		@media (min-width:1200px)
+			top: 0
